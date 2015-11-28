@@ -1,0 +1,33 @@
+{
+  "name": "brotli-experiments",
+  "version": "0.0.1",
+  "description": "Just some experiments with Brotli in the browser",
+  "main" : "brotli-experiments",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/replete/ui.git"
+  },
+  "keywords": [
+    "brotli",
+    "compression",
+    "browser"
+  ],
+  "author": {
+    "name": "Phil Ricketts",
+    "email": "phil@replete.nu",
+    "twitter": "replete",
+    "github": "replete"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/replete/brotli-experiments/issues"
+  },
+  "homepage": "https://github.com/replete/brotli-experiments#readme",
+  "devDependencies": {
+
+  }
+}
