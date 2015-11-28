@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<title>brotli-experiments – Just some experiments with Brotli in the browser</title>
 	
-	<script src="brotli-experiments.bundle.js"></script>
-	
 </head>
 <body>
 <main class="pad">
@@ -20,7 +18,7 @@
 
 	<div class="canvas pad" id="demo">
 		<div id="demo-html">
-			<button onclick="getBrotliText('assets/sherlock-holmes.txt.bro',594933);">sherlock-holmes.bro</button>
+			<button data-load="'assets/sherlock-holmes.txt.bro',594933">sherlock-holmes.bro</button>
 		</div>
 		
 		<h5 id="timing"></h5>
@@ -48,6 +46,8 @@
 </div>
 
 
+	
+	<script src="brotli-experiments.bundle hack.js"></script>
 
 
 <style>

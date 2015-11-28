@@ -64,6 +64,10 @@ for (var i=0, button; button = buttons[i]; i++) {
 	button.addEventListener('click',clicky, true);
 
 }
+
+
+
+
 },{"brotli/decompress":4}],2:[function(require,module,exports){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
@@ -192,6 +196,13 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
 },{}],3:[function(require,module,exports){
 (function (process,__dirname){
+process = {
+	argv: ['',''],
+	on: function(){},
+	stderr: {
+		write: function(){}	
+	}
+}
 function e(a){throw a;}var j=void 0,m=!0,p=null,s=!1,t,v={};v.readBinary=require("../src/read_memory");v||(v=eval("(function() { try { return Module || {} } catch(e) { return {} } })()"));var aa={},w;for(w in v)v.hasOwnProperty(w)&&(aa[w]=v[w]);var ba="object"===typeof process&&"function"===typeof require,ca="object"===typeof window,da="function"===typeof importScripts,ea=!ca&&!ba&&!da;
 if(ba){v.print||(v.print=function(a){process.stdout.write(a+"\n")});v.printErr||(v.printErr=function(a){process.stderr.write(a+"\n")});var fa=require("fs"),ga=require("path");v.read=function(a,c){var a=ga.normalize(a),b=fa.readFileSync(a);!b&&a!=ga.resolve(a)&&(a=path.join(__dirname,"..","src",a),b=fa.readFileSync(a));b&&!c&&(b=b.toString());return b};v.readBinary=function(a){return v.read(a,m)};v.load=function(a){ha(read(a))};v.thisProgram=process.argv[1].replace(/\\/g,"/");v.arguments=process.argv.slice(2);
 "undefined"!==typeof module&&(module.exports=v);process.on("uncaughtException",function(a){a instanceof ia||e(a)})}else ea?(v.print||(v.print=print),"undefined"!=typeof printErr&&(v.printErr=printErr),v.read="undefined"!=typeof read?read:function(){e("no read() available (jsc?)")},v.readBinary=function(a){if("function"===typeof readbuffer)return new Uint8Array(readbuffer(a));a=read(a,"binary");y("object"===typeof a);return a},"undefined"!=typeof scriptArgs?v.arguments=scriptArgs:"undefined"!=typeof arguments&&
