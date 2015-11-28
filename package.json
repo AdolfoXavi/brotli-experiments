@@ -2,10 +2,10 @@
   "name": "brotli-experiments",
   "version": "0.0.1",
   "description": "Just some experiments with Brotli in the browser",
-  "main" : "brotli-experiments",
+  "main": "brotli-experiments",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .build"
+    "start": "node .watch"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,8 @@
   "keywords": [
     "brotli",
     "compression",
-    "browser"
+    "browser",
+    "experiment"
   ],
   "author": {
     "name": "Phil Ricketts",
@@ -22,12 +23,27 @@
     "twitter": "replete",
     "github": "replete"
   },
-  "license": "MIT",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/replete/brotli-experiments/issues"
   },
   "homepage": "https://github.com/replete/brotli-experiments#readme",
+  "config": {
+    "uglifyBuild": {
+      "fromString": true,
+      "mangle": true,
+      "compress": {
+        "unsafe": true
+      },
+      "options": {
+        "ie_proof": false
+      }
+    }
+  },
   "devDependencies": {
-
+    "brotli": "^1.1.0",
+    "browser-sync": "^2.10.0",
+    "iltorb": "^1.0.7",
+    "uglify-js": "^2.6.1"
   }
 }
