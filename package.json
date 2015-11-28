@@ -5,7 +5,8 @@
   "main": "brotli-experiments",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .watch"
+    "start": "node .watch",
+    "build": "node .build"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
   "devDependencies": {
     "brotli": "^1.1.0",
     "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
     "iltorb": "^1.0.7",
     "uglify-js": "^2.6.1"
   }

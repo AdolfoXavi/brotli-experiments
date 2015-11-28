@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="block">
+<head>
+	<meta charset="utf-8">
+	<title>brotli-experiments – Just some experiments with Brotli in the browser</title>
+	
+	<script src="brotli-experiments.bundle.js"></script>
+	
+</head>
+<body>
+<main class="pad">
+
+	<h1>
+		<a href="https://github.com/replete/brotli-experiments#readme">brotli-experiments</a>
+		<span class="soft small">v0.0.1</span>
+		<span class="small fr"><a href="http://twitter.com/replete" target="_blank">github</a></span>
+	</h1>
+	<p>Just some experiments with Brotli in the browser<br/><br/></p>
+	
+
+	<div class="canvas pad" id="demo">
+		<div id="demo-html">
+			<button onclick="getBrotliText('assets/sherlock-holmes.txt.bro',594933);">sherlock-holmes.bro</button>
+		</div>
+		
+		<h5 id="timing"></h5>
+		<textarea id="text"></textarea>
+
+	</div>
+
+
+	<pre class="block canvas pad">
+	<code class="language-js" data-insert-js>
+	</code>
+	</pre>
+
+</main>
+
+<div class="pad">
+	<div class="small soft">
+	∞<span class="fr">made with ❤, ninjas, and other clichés by <a href="http://twitter.com/replete" target="_blank">@replete</a></span>
+	</div>
+
+	<h2>Unlicense License</h2>
+	<p class="small soft">
+		Copyright (c) 2015 Phil Ricketts<br/><br/>This is free and unencumbered software released into the public domain.<br/><br/>Anyone is free to copy, modify, publish, use, compile, sell, or<br/>distribute this software, either in source code form or as a compiled<br/>binary, for any purpose, commercial or non-commercial, and by any<br/>means.<br/><br/>In jurisdictions that recognize copyright laws, the author or authors<br/>of this software dedicate any and all copyright interest in the<br/>software to the public domain. We make this dedication for the benefit<br/>of the public at large and to the detriment of our heirs and<br/>successors. We intend this dedication to be an overt act of<br/>relinquishment in perpetuity of all present and future rights to this<br/>software under copyright law.<br/><br/>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,<br/>EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<br/>MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.<br/>IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR<br/>OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,<br/>ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR<br/>OTHER DEALINGS IN THE SOFTWARE.<br/><br/>For more information, please refer to <http://unlicense.org/>
+	</p>
+</div>
+
+
+
+
+<style>
+/* Layout */
+*:not(span) {
+	margin: 0 0 1em 0;
+	font-family: -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+body {
+	max-width: 800px;
+	margin: 0 auto
+}
+main {
+	background: #fff;
+	margin: 40px 0 0 0;
+	box-shadow: 0 4px 4px -2px #ccc
+}
+code {
+	font-family: monospace;
+	font-size:13px;
+}
+
+/* Style:; */
+.small {
+	font-size: 15px
+}
+.pad {
+	padding: 40px;
+}
+.block {
+	background: #eee
+}
+.soft {
+	color: #aaa
+}
+.small {
+	font-size: 13px
+}
+.canvas {
+	padding:30px;
+	box-shadow:inset 2px 2px 8px -2px #ddd;
+	background: #fafafa;
+}
+.canvas * {
+	font-size:14px;
+	margin:0 0 0 0;
+}
+.fr {
+	float:right
+}
+.tc {
+	text-align:center
+}
+a {
+	color: #FF25B8;
+	text-decoration: none
+}
+p {
+	max-width:600px;
+}
+textarea {
+width:100%;
+display: block;
+}
+</style>
+
+
+</body>
+</html>
